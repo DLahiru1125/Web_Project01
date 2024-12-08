@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact_services.css">
+    <script src="contact_script.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <a href="About.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="services.html" >Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="contact01">
+        <div class="contact02">
+            <h1>Contact Us</h1>
+            <p class="con_p0">Need help? </p> 
+            <p class="con_p1">Our support team are here to answer all your questions.</p><br>
+            <p class="con_p2"><strong>Email:</strong> info@email.com</p>
+            <p class="con_p2"><strong>Phone:</strong> 076 xxxxxxx</p>
+            <p class="con_p2"><strong>Address:</strong> Badulla, Sri Lanka</p>
+        </div>
+        <form class="contact_form" onsubmit="submitForm(event)">
+            <div class="group">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="first name" required>
+            </div>
+            <div class="group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="last name" required>
+            </div>
+            <div class="group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="group">
+                <label for="subject">Subject*</label>
+                <input type="text" id="subject" name="subject" placeholder="subject" required>
+            </div>
+            <div class="group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" rows="4"placeholder="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="contact_script.js"></script>
+</body>
+</html>
